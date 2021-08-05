@@ -21,3 +21,28 @@ label {
   transition: 0.5s;
   box-shadow: 0 0 20px #477a8550;
 }
+
+label::after {
+  content: "";
+  width: 120px;
+  height: 120px;
+  background-color: #e8f5f7;
+  border-radius: 70px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transition: 0.5s;
+}
+
+input:checked + label::after {
+  left: calc(100% - 10px);
+  transform: translateX(-100%);
+}
+
+input:checked + label {
+  background-color: #243d42;
+}
+
+label:active:after {
+  width: 160px;
+}
