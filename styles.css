@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 input[type="checkbox"] {
   width: 0;
   height: 0;
